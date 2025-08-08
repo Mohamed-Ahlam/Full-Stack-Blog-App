@@ -1,11 +1,58 @@
+$lightGreen: #b9e7e7;
+
+
 .app{
     .container{
 
         // Login and Regisration page
         .auth {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 100vh;
+            background-color: $lightGreen;
+        }
+
+        h1{
+            font-size: 20px;
+            color: teal;
+            margin-bottom: 20px;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 50px;
+            width: 200px;
+            background-color: white;
+        }
+
+        input{
+            border: none;
+            border-bottom: 1px solid gray;
+            padding: 10px;
+        }
+        
+        .primary--btn{
+            border: none;
+            background-color: teal;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        p{
+            text-align: center;
+            color: red;
+            font-size: 12px;
+
+        }
+
+        span{
+            font-size: 12px;
+            text-align: center;
         }
     }
 }
